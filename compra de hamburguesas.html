@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Carrito_Formulario de pedido hamburguesa</title>
+  <link rel="stylesheet" href="compra estilo.css">
+</head>
+<body>
+    <header>
+        <button id="menu-toggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="en linea.html">Ordena en línea</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="Promocion especial.html">Promoción Especial</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a> Tel. 771 236 5052 </a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="contenedor">
+        <a href="index.html" class="logo-link">
+          <img src="LOGO BLANCO.png" alt="Logo del Restaurante" class="logo">
+        </a>
+      </section>
+      
+
+      <main class="form-section">
+        <h2>Formulario de Pedido</h2>
+        <form action="#" method="POST" class="order-form">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="correo@example.com" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="direccion">Dirección de Entrega:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Calle, número, colonia" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="referencia">Referencia de Ubicación:</label>
+            <textarea id="referencia" name="referencia" placeholder="Descripción adicional, ejemplo: 'Casa roja con portón grande'" rows="3"></textarea>
+          </div>
+    
+          <div class="form-group">
+            <label for="comida">¿Qué comida deseas pedir?</label>
+            <input type="text" id="comida" name="comida" placeholder="Ejemplo: Hamburguesa, Alitas, etc." required>
+          </div>
+    
+          <div class="form-group">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-comida">Tipo de hamburguesa</label>
+            <select id="tipo-comida" name="tipo-comida">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="salsa-mango">Sirloin</option>
+          <option value="salsa-piña">Arrachera</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-comida">Ingredientes extra</label>
+            <select id="tipo-comida" name="tipo-comida">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="salsa-mango">Sirloin</option>
+          <option value="salsa-piña">Arrachera</option>
+          <option value="salsa-chipotle">Tocino</option>
+          <option value="salsa-tamarindo">Piña</option>
+          <option value="salsa-bbq">Jamón</option>
+          <option value="salsa-bbq">Queso amarillo</option>
+          <option value="salsa-bbq">Queso Oaxaca</option>
+          <option value="salsa-bbq">Ninguna</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="tipo-comida">Tipo de salsa:</label>
+            <select id="tipo-comida" name="tipo-comida">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="salsa-mango">Salsa habanero con mango</option>
+          <option value="salsa-piña">Salsa habanero con piña</option>
+          <option value="salsa-chipotle">Salsa chipotle</option>
+          <option value="salsa-tamarindo">Salsa tamarindo</option>
+          <option value="salsa-bbq">Salsa BBQ</option>
+          <option value="salsa-bbq">Ninguna</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="pago">Forma de Pago:</label>
+            <select id="pago" name="pago" required>
+              <option value="" disabled selected>Selecciona una forma de pago</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+              <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Especificaciones extra para tu pedido (opcional)" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="payment">Pago con tarjeta</label>
+            <input type="text" id="payment" name="payment" placeholder="Número de tarjeta" required>
+          </div>
+    
+          <button type="submit" class="submit-btn">Enviar Pedido</button>
+        </form>
+      </main>
+
+    <!-- Footer agregado -->
+    <footer>
+      <p>© 2024 El carrito. Diseño realizado por María Teresa Cázares Pérez. Todos los derechos reservados.</p>
+      <p>Contacto: 771 236 5052.</p>
+      </footer>
+    
+      <script src="script.js"></script>
+</body>
+</html>

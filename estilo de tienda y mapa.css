@@ -1,0 +1,272 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+  
+  /* Estilo del header y botón */
+  header {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+/* Header con el logo */
+.contenedor {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.logo {
+  width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+}
+
+
+  #menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  /* Estilo de la barra de navegación */
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 9;
+  }
+  
+  #nav-menu ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  #nav-menu li {
+    margin: 20px 0;
+  }
+  
+  #nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #nav-menu.show {
+    left: 0; /* Muestra la barra */
+  }
+
+  /* Estilo para resaltar la opción seleccionada */
+#nav-menu a.active,
+#nav-menu a:focus {
+  color: rgb(255, 193, 50); /* Color destacado */
+
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #ffc60a;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #dcdcdc;
+  }
+  
+  .header .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffc60a;
+    font-size: 1.2rem;
+  }
+  
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+  
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Estilos para la sección del menú */
+.menu {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.menu h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #ffc60a;
+}
+
+.menu h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffc60a;
+}
+
+/* Diseño de la cuadrícula del menú */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cada elemento del menú */
+.menu-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen del platillo */
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Información del platillo */
+.menu-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.menu-info h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: #2c3e50;
+}
+
+.menu-info .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffc60a;
+  margin-bottom: 10px;
+}
+
+.menu-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #7f8c8d;
+}
+
+    /* Incluye aquí tus estilos CSS */
+    .highlight {
+      font-weight: bold;
+      color: red;
+    }
+    .order-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #ffc60a;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+    }
+    .order-button:hover {
+      background-color: #ffc60a;
+    }
+
+
+/* Añadir reglas de media queries para dispositivos pequeños */
+@media (max-width: 768px) {
+  .menu h1 {
+    font-size: 2rem;
+  }
+
+  .menu-item img {
+    height: 150px;
+  }
+}
+  
+  /* Ubicación */
+  .location-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .location-info p {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d35400;
+    color: #fff;
+  }
+
+   /* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }

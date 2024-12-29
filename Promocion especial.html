@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Carrito_Promoción Especial</title>
+  <link rel="stylesheet" href="promo style.css">
+</head>
+<body>
+    <header>
+        <button id="menu-toggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="en linea.html">Ordena en línea</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="Promocion especial.html">Promoción Especial</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a> Tel. 771 236 5052 </a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="contenedor">
+        <a href="index.html" class="logo-link">
+          <img src="LOGO BLANCO.png" alt="Logo del Restaurante" class="logo">
+        </a>
+      </section>
+      
+    <h1>Promoción Especial</h1>
+  </header>
+
+     <!-- Descripción del blog -->
+<section class="blog-description" id="descripcion">
+    <div class="description-container">
+        <div class="description-text">
+            <h2>De qué trata la promoción</h2>
+            <p>En la compra de un paquete jumbo (una orden de costillas, alitas con salsas a elegir, acompañadas con una 
+                orden de papas) obtén de regalo un arroz con leche o una ensalada de manzana o zanahoria. </p>         
+        </div>
+        <div class="description-image">
+            <img src="PROMOCION.png" alt="FOTO DEL NEGOCIO">
+        </div>
+    </div>
+  </section>
+
+  <div class="container"> 
+    <h2>Ordena tu promoción en línea</h2>
+    <form action="/submit-promotion" method="POST">
+      <div class="form-group">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Dirección</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Teléfono</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="references">Referencias de ubicación</label>
+        <textarea id="references" name="references" rows="2"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="gift-option">Opción de regalo</label>
+        <select id="gift-option" name="gift-option" required>
+          <option value="ensalada-manzana">Ensalada de manzana</option>
+          <option value="arroz">Arroz</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="gift-option">Salsas</label>
+        <select id="gift-option" name="gift-option" required>
+          <option value="salsa-mango">Salsa habanero con mango</option>
+          <option value="salsa-piña">Salsa habanero con piña</option>
+          <option value="salsa-chipotle">Salsa chipotle</option>
+          <option value="salsa-tamarindo">Salsa tamarindo</option>
+          <option value="salsa-bbq">Salsa BBQ</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="payment">Pago con tarjeta</label>
+        <input type="text" id="payment" name="payment" placeholder="Número de tarjeta" required>
+      </div>
+
+      <button type="submit">Confirmar compra</button>
+    </form>
+  </div>
+
+      <!-- Footer agregado -->
+      <footer>
+        <p>© 2024 El carrito. Diseño realizado por María Teresa Cázares Pérez. Todos los derechos reservados.</p>
+        <p>Contacto: 771 236 5052.</p>
+      </footer>
+    
+      <script src="script.js"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+  
+  /* Estilo del header y botón */
+  header {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+/* Header con el logo */
+.contenedor {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.logo {
+  width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+}
+
+
+  #menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  /* Estilo de la barra de navegación */
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 9;
+  }
+  
+  #nav-menu ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  #nav-menu li {
+    margin: 20px 0;
+  }
+  
+  #nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #nav-menu.show {
+    left: 0; /* Muestra la barra */
+  }
+
+  /* Estilo para resaltar la opción seleccionada */
+#nav-menu a.active,
+#nav-menu a:focus {
+  color: rgb(255, 193, 50); /* Color destacado */
+
+}
+
+
+/* General */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #ffc60a;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #dcdcdc;
+  }
+  
+  .header .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffc60a;
+    font-size: 1.2rem;
+  }
+  
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Formulario */
+  .form-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .order-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input, 
+  .form-group select, 
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffc60a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ffc60a;
+  }
+
+    /* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }

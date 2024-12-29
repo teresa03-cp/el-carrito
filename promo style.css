@@ -1,0 +1,252 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+  
+  /* Estilo del header y botón */
+  header {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+/* Header con el logo */
+.contenedor {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.logo {
+  width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+}
+
+
+  #menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  /* Estilo de la barra de navegación */
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.3s ease;
+    z-index: 9;
+  }
+  
+  #nav-menu ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  #nav-menu li {
+    margin: 20px 0;
+  }
+  
+  #nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #nav-menu.show {
+    left: 0; /* Muestra la barra */
+  }
+
+  /* Estilo para resaltar la opción seleccionada */
+#nav-menu a.active,
+#nav-menu a:focus {
+  color: rgb(255, 193, 50); /* Color destacado */
+
+}
+
+/* cuerpo de la pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .promocion{
+    background-color: #333;
+    color: white;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #ffd000;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .promotion-img {
+    text-align: center;
+  }
+
+  .promotion-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  form .form-group {
+    margin-bottom: 15px;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  form textarea {
+    resize: vertical;
+  }
+
+  form button {
+    background-color: #ffc60a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  form button:hover {
+    background-color: #ffc60a;
+  }
+
+      /* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+
+
+  /*la descripcion del sitio*/
+.blog-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #000000;
+  }
+  
+  .description-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .description-text {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .description-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fafafa;
+  }
+  
+  .description-text h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+    text-align: center;
+  }
+  .description-text p {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  
+  .description-image {
+    flex: 1;
+    max-width: 35%;
+    text-align: right;
+  }
+  
+  .description-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .description-container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .description-text, .description-image {
+        max-width: 100%;
+    }
+  
+    .description-image img {
+        margin-top: 20px;
+    }
+  }
